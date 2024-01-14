@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class PatrolBall : MonoBehaviour
 {
-    private Follow follower;
-
     public NavMeshAgent ghostAgent;
     public NavMeshAgent followerAgent;
 

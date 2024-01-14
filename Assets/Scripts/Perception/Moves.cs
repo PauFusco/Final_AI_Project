@@ -36,7 +36,7 @@ public class Moves : MonoBehaviour
         foreach (GameObject item in obstacles)
         {
             float temp = Vector3.Distance(hideFrom.transform.position, item.transform.position);
-            if (closestDist == -1 || temp < closestDist)
+            if (closestDist == -1 || temp > closestDist)
             {
                 closestObj = item;
                 closestDist = temp;

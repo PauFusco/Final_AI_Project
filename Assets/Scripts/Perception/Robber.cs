@@ -63,15 +63,13 @@ public class Robber : MonoBehaviour
                     state = IsGuarded() ? States.Wander : States.Seek;
                     if (CanSteal() && !stolen)
                     {
-                        Debug.Log("Can steal");
-                        //treasure.SetActive(false);
                         state = States.Hide;
                     }
                     yield return Approaching();
                     break;
 
                 case States.Hide:
-                    agent.speed = 2f;
+                    agent.speed = 3f;
                     yield return Hiding();
                     break;
             }
