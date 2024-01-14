@@ -10,7 +10,6 @@ public class Robber : MonoBehaviour
     public GameObject policeman;
 
     public NavMeshAgent Policeman;
-
     private GameObject target;
 
     private float dist2Steal = 1f;
