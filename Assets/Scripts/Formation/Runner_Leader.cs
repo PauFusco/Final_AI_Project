@@ -14,7 +14,7 @@ public class Runner_Leader : MonoBehaviour
         int front = 2 * runner / 3;
         int rear = runner - front;
         createRow(front, -2f, runnerPrefab);
-        createRow(rear, -8f, runnerPrefab);
+        createRow(rear, -4f, runnerPrefab);
     }
 
     private void createRow(int num, float z, GameObject pf)
