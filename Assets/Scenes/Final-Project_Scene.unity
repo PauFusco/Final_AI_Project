@@ -652,6 +652,11 @@ MonoBehaviour:
   radius: 1
   offset: 1
   agent: {fileID: 304640094}
+--- !u!1 &446709236 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3eecc49b2a0487b459dea19913038fef, type: 3}
+  m_PrefabInstance: {fileID: 794558572}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &626173861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1007,9 +1012,10 @@ Transform:
   m_LocalPosition: {x: -3.108933, y: 4.75605, z: -13.3234215}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2138019296}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1222739127
 GameObject:
@@ -1336,6 +1342,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1272775018}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1276252878 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3eecc49b2a0487b459dea19913038fef, type: 3}
+  m_PrefabInstance: {fileID: 2029754428}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1296151946 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8261057998876808536, guid: c5e6bd32494a1f140ab0de6f5030e00d, type: 3}
@@ -2202,6 +2213,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1758054131}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1770749636 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3eecc49b2a0487b459dea19913038fef, type: 3}
+  m_PrefabInstance: {fileID: 1849996300}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1819847344
 GameObject:
   m_ObjectHideFlags: 0
@@ -2907,6 +2923,9 @@ GameObject:
   - component: {fileID: 2138019295}
   - component: {fileID: 2138019294}
   - component: {fileID: 2138019293}
+  - component: {fileID: 2138019297}
+  - component: {fileID: 2138019298}
+  - component: {fileID: 2138019299}
   m_Layer: 0
   m_Name: Robber
   m_TagString: Untagged
@@ -2986,13 +3005,80 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2138019292}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.95, y: 1.25, z: -8.44}
+  m_LocalPosition: {x: 2.158933, y: -3.50605, z: 4.883422}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 1038445830}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2138019297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138019292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45004b8ff43c1da43b2ef3e91dc95b9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grannys:
+  - {fileID: 1296151946}
+  - {fileID: 1588299244}
+  - {fileID: 1230334949}
+  - {fileID: 235297848}
+  - {fileID: 304640092}
+  - {fileID: 1565734325}
+  - {fileID: 1510920184}
+  - {fileID: 1633859939}
+  trees:
+  - {fileID: 1276252878}
+  - {fileID: 1770749636}
+  - {fileID: 446709236}
+  policeman: {fileID: 1222739127}
+  Policeman: {fileID: 1222739132}
+--- !u!195 &2138019298
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138019292}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &2138019299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138019292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4275beb5b6dd6a43b46b78d4763b4f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 2138019298}
+  objective: {fileID: 0}
+  obstacles:
+  - {fileID: 1276252878}
+  - {fileID: 1770749636}
+  - {fileID: 446709236}
 --- !u!1001 &2348803442526751219
 PrefabInstance:
   m_ObjectHideFlags: 0
