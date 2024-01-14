@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Wander
+  - Police
+  - Robber
   layers:
   - Default
   - TransparentFX
